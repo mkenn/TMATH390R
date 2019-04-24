@@ -17,3 +17,37 @@ summary(lect4.data)
 hist(lect4.data)
 # draw a boxplot
 boxplot(lect4.data,horizontal = TRUE)
+
+####
+# Section B self-reported heights
+hts.b=scan("htsb.txt")
+# explore consequences of outliers by removing
+# the 1st, 2nd, and 30th values
+hts.b.noOut=hts.b[-c(1,2,30)]
+# 5-number summary plus the mean
+summary(hts.b.noOut)
+# variance
+var(hts.b.noOut)
+# standard deviation
+sd(hts.b.noOut)
+
+####
+# Section A self-reported heights
+hts.a=scan("htsa.txt")
+#5-number summary plus the mean
+summary(hts.a)
+# variance
+var(hts.a)
+# standard deviation
+sd(hts.a)
+
+# explore consequences of outliers by removing
+# the 1st and 2nd values
+hts.a.noOut=hts.a[-c(1,2)]
+# 5-number summary plus the mean
+summary(hts.a.noOut)
+# variance
+var(hts.a.noOut)
+# standard deviation
+sd(hts.a.noOut)
+
